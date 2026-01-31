@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Results and checkpoints (optional: remove these lines if you want to track results)
+results/
+*.pth
+*.pt
+
+# Data (large files - exclude to keep repo small)
+S*/
+*.mat
+*.edf
+*.edf.event
+Four class motor imagery (001-2014)/
+Two class motor imagery (002-2014)/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs
+*.log

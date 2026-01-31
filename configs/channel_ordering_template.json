@@ -1,0 +1,13 @@
+{
+  "description": "Dataset-specific known channel ordering (EEG only). Use when .mat files do not contain channel names. Order must match the channel dimension of the data array.",
+  "channel_order": [
+    "Fp1", "Fp2", "Fpz", "F7", "F3", "Fz", "F4", "F8",
+    "T7", "T8", "C3", "Cz", "C4", "Cp3", "Cpz", "Cp4",
+    "P7", "P3", "Pz", "P4", "P8", "O1", "Oz", "O2"
+  ],
+  "notes": [
+    "Replace with your dataset's actual channel order (e.g. 22ch or 64ch cap).",
+    "Channel names should be 10-20 style for cross-dataset alignment.",
+    "Do not include EOG/EMG/other non-EEG channels here if you want merge by common EEG only."
+  ]
+}

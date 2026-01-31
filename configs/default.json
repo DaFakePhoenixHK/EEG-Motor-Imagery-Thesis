@@ -1,0 +1,29 @@
+{
+  "preprocessing": {
+    "notch_freq": 50.0,
+    "filter_low": 8.0,
+    "filter_high": 30.0,
+    "ref_channels": "average",
+    "tmin": 0.0,
+    "tmax": 4.0,
+    "baseline": null,
+    "reject": null
+  },
+  "features": {
+    "csp_components": 8
+  },
+  "models": {
+    "lda": {
+      "solver": "svd",
+      "shrinkage": null
+    },
+    "svm": {
+      "C": 1.0,
+      "kernel": "linear"
+    }
+  },
+  "training": {
+    "cv_folds": 5,
+    "seed": 42
+  }
+}

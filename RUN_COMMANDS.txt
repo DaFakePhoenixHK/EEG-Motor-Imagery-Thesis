@@ -1,0 +1,19 @@
+EXACT COMMANDS TO RUN
+=====================
+
+Make sure you're in the correct directory:
+cd c:\Users\User\Desktop\Thesis\files
+
+1. TEST BASELINE (Start here - it's faster):
+   python -m scripts.train_baseline --data_dir . --subjects 1 --runs 4 8 12 --model lda
+
+2. TRAIN EEGNET:
+   python -m scripts.train_eegnet --data_dir . --subjects 1 --runs 4 8 12 --device cuda
+
+IMPORTANT: 
+- The `--data_dir .` means "current directory" (where the S001, S002 folders are)
+- You MUST provide `--data_dir` - it's a required argument
+- You MUST provide `--subjects` - it's also required
+
+If you're in a different directory, use the full path:
+   python -m scripts.train_eegnet --data_dir "c:\Users\User\Desktop\Thesis\files" --subjects 1 --runs 4 8 12 --device cuda
